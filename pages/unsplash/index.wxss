@@ -1,0 +1,15 @@
+/* pages/unsplash/index.wxss */
+.photo-component{
+  width: 100%;
+  margin-bottom: 12px;
+}
+.photo-component image{
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: object-fit\:cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+  cursor: zoom-in;
+  background-color: #ddd;
+}

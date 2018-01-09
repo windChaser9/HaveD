@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/unsplash/index",
+    "pages/moon/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HaveD",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6f6f6f",
+    "backgroundColor": "#fff",
+    "selectedColor": "#1296db",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home_f.png",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/unsplash/index",
+        "iconPath": "imgs/picture.png",
+        "selectedIconPath": "imgs/picture_f.png",
+        "text": "Unsplash"
+      },
+      {
+        "pagePath": "pages/moon/index",
+        "iconPath": "imgs/moon.png",
+        "selectedIconPath": "imgs/moon_f.png",
+        "text": "Moon"
+      }
+    ]
+  },
+  "debug": true
+}

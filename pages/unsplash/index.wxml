@@ -1,0 +1,4 @@
+<!--pages/unsplash/index.wxml-->
+<view class="photo-component" wx:for="{{list}}" wx:key="{{item.id}}" style="height:{{item.height}}px" catchtap="imgPreview" data-img-url="{{item.imgUrl}}">
+  <image src="{{item.imgUrl}}" alt="{{item.description}}"></image>
+</view>
