@@ -1,4 +1,19 @@
 <!--pages/unsplash/index.wxml-->
-<view class="photo-component" wx:for="{{list}}" wx:key="{{item.id}}" style="height:{{item.height}}px" catchtap="imgPreview" data-img-url="{{item.imgUrl}}">
-  <image src="{{item.imgUrl}}" alt="{{item.description}}"></image>
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'active' : ''}}" data-current="0" bindtap="swichNav">Trending</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'active' : ''}}" data-current="1" bindtap="swichNav">New</view> 
+</view>
+<view class='list'>
+  <view class="photo-component"
+    wx:for="{{list}}"
+    wx:key="{{item.id}}"
+    style="height:{{item.height}}px"
+    catchtap="imgPreview"
+    data-img-url="{{item.imgUrl}}">
+    <image class="photo-component-img" src="{{item.imgUrl}}" alt="{{item.description}}"></image>
+    <view class="photo-component-user-info">
+      <image class="photo-component-user-img" src="{{item.userImg}} "></image>
+      <text class="photo-component-user-name">{{item.name}}</text>
+    </view>
+  </view>
 </view>
