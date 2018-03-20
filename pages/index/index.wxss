@@ -19,3 +19,21 @@
 .usermotto {
   margin-top: 200px;
 }
+.desc{
+  position: relative;
+   padding:0rpx 50rpx; 
+   margin:0rpx;
+}
+.desc .section{
+  display: inline-block;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  line-height: 50rpx;
+  text-indent: 2em;
+}
+.desc .mail{
+  position: absolute;
+  right: 50rpx;
+  bottom: -100rpx;
+  font-size: 28rpx;
+}

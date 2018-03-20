@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
@@ -9,5 +9,19 @@
   </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
+  </view> -->
+  <view class='desc'>
+    <view class='section'>
+      Welcome to the unsplash image small program, which is only due to personal preferences, and has nothing to do with the original website.
+    </view>
+    <view class='section'>
+    Unsplash is a high quality free picture website, all pictures from real photography. All the pictures from this website are from unsplash.
+    </view>
+    <view class='section'>
+      If there is any infringement of your rights, please contact me immediately. Thank you.
+    </view>
+    <view class='mail'>
+      E-mail：zhaofayu@qq.com
+    </view>
   </view>
 </view>
